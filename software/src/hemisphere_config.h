@@ -101,7 +101,7 @@
 #endif
 #include "applets/hMIDIIn.h"
 #include "applets/hMIDIOut.h"
-#include "applets/PamHelper.h"
+#include "applets/PresetMgr.h"
 
 template<class A>
 struct DeclareApplet {
@@ -217,6 +217,8 @@ AppletRegistry reg{
 #ifdef PEWPEWPEW
     DeclareApplet<WTVCO>{67, 0x80},
 #endif
+    DeclareApplet<PresetMgrLeft>{997, 0x10}, // PresetMgrLeft registration, Utility category
+    DeclareApplet<PresetMgrRight>{998, 0x10}, // PresetMgrRight registration, Utility category
 };
 
 
