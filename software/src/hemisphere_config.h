@@ -101,6 +101,7 @@
 #endif
 #include "applets/hMIDIIn.h"
 #include "applets/hMIDIOut.h"
+#include "applets/PamHelper.h"
 
 template<class A>
 struct DeclareApplet {
